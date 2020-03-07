@@ -1,3 +1,10 @@
+/*
+ * Author : Maxence Marin
+ * Class : SI-C1B
+ * Version 0.0.1
+ * Description : Projet de bataille Navale 
+ */
+
 #include <stdio.h>
 #include <windows.h>
 #include <stdlib.h>
@@ -29,44 +36,66 @@ int main() {
            "^\"~-,._.,-~\"^\"~-,._.,-~\"^\"~-,._.,-~\"^\"~-,._.,-~\"^\"~-,._\n"
            "~-,._.,-~\"^\"~-,._.,-~\"^\"~-,._.,-~\"^\"~-,._.,-~\"^\"~-,._");
     printf("\n");
+    printf("\n");
+    system("pause");
 
-    printf("  /\\/\\   ___ _ __  _   _   _ __  _ __(_)_ __   ___(_)_ __   __ _| |\n"
-           " /    \\ / _ \\ '_ \\| | | | | '_ \\| '__| | '_ \\ / __| | '_ \\ / _` | |\n"
-           "/ /\\/\\ \\  __/ | | | |_| | | |_) | |  | | | | | (__| | |_) | (_| | |\n"
-           "\\/    \\/\\___|_| |_|\\__,_| | .__/|_|  |_|_| |_|\\___|_| .__/ \\__,_|_|");
+
+do {
+    system("cls");
+    printf("\n\t\t\t  /\\/\\   ___ _ __  _   _   _ __  _ __(_)_ __   ___(_)_ __   __ _| |\n"
+           "\t\t\t /    \\ / _ \\ '_ \\| | | | | '_ \\| '__| | '_ \\ / __| | '_ \\ / _` | |\n"
+           "\t\t\t/ /\\/\\ \\  __/ | | | |_| | | |_) | |  | | | | | (__| | |_) | (_| | |\n"
+           "\t\t\t\\/    \\/\\___|_| |_|\\__,_| | .__/|_|  |_|_| |_|\\___|_| .__/ \\__,_|_|");
+
 
     printf("\n\n1: Jouer");
     printf("\n2: Afficher le menu d'aide");
     printf("\n3: Afficher les meilleurs scores");
     printf("\n4: Quittez l'application");
 
-        scanf("%d", &menuValue);
+    scanf("%d", &menuValue);
 
-    if(menuValue==1){
+
+    if (menuValue == 1) {
         system("cls");
-        printf("Vous accédez au menu de jeu..");
+        printf("Vous accedez au menu de jeu..");
         int i = 0;
 
-        puts("Chargement des ressources en cours...\n");
+        puts("\nChargement des ressources en cours...\n");
 
-        for (; i < 20; i++)
-        {
+        for (; i < 20; i++) {
             printf("#");
             Sleep(200);
         }
-
-        puts("\n\nFait !\n");
+        system("cls");
+        puts("\n\nBienvenue !\n");
 
         getchar();
     }
-    if(menuValue==2){
+    if (menuValue == 2) {
         system("cls");
         printf("Vous accédez au menu d'aide...");
     }
-    if(menuValue==3){
+    if (menuValue == 3) {
         system("cls");
         printf("Vous accedez aux meilleurs scores ");
     }
+    if (menuValue == 4) {
+        system("cls");
+        printf("  ___                            _      \n"
+               " / _ \\                          (_)     \n"
+               "/ /_\\ \\_   _ _ __ _____   _____  _ _ __ \n"
+               "|  _  | | | | '__/ _ \\ \\ / / _ \\| | '__|\n"
+               "| | | | |_| | | |  __/\\ V / (_) | | |   \n"
+               "\\_| |_/\\__,_|_|  \\___| \\_/ \\___/|_|_| ");
+        system("\n\nexit");
+    }
+
+    if (menuValue > 4) {
+        printf("Le nombre que vous venez d'inserer n'est pas le bon, veuillez reessayer.");
+    }
+}while(menuValue>4);
+
 /*   do {
        scanf("%d", &menuValue);
 
