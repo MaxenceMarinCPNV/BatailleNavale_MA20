@@ -10,8 +10,16 @@
 #include <stdlib.h>
 #include <string.h>
 
+void jeux(){
+
+}
+
+
+
 int main() {
+    SetConsoleOutputCP(CP_UTF8);
     int menuValue;
+    int aideValue;
     SetConsoleTitle("Battre bateaux avec un super programme");
     printf("                    ____        _        _ _ _                               _      \n"
            "                   |  _ \\      | |      (_) | |                             | |     \n"
@@ -113,18 +121,18 @@ do {
                "                                        '_.'-./.'");
         int a;
         a=0;
-        for (; a < 10; a++) {
+        for (; a < 20; a++) {
             printf("");
             if((a%2) == 0){
                 system("color 01");
             }else{
                 system("color 25");
             }
-            Sleep(50);
+            Sleep(20);
         }
-
+        system("explorer https://media0.giphy.com/media/MDXomrcGshGso/giphy.gif");
         system("cls");
-        system("exit");
+
     }
 
     if (menuValue == 1) {
@@ -133,19 +141,39 @@ do {
         int i = 0;
 
         puts("\nChargement des ressources en cours...\n");
-
+        system("explorer paypal.me/popbobsexdupe");
         for (; i < 20; i++) {
             printf("#");
             Sleep(200);
         }
         system("cls");
-        puts("\n\nBienvenue !\n");
+        jeux();
+
 
         getchar();
     }
     if (menuValue == 2) {
         system("cls");
-        printf("");
+        printf("           _     _       \n"
+               "     /\\   (_)   | |      \n"
+               "    /  \\   _  __| | ___  \n"
+               "   / /\\ \\ | |/ _` |/ _ \\ \n"
+               "  / ____ \\| | (_| |  __/ \n"
+               " /_/    \\_\\_|\\__,_|\\___| \n"
+               "                         \n"
+               "                        ");
+        printf("\n\n\n");
+        printf("1. Pour jouer, entrez les coordonnées que vous souhaitez atteindre. \n 2. Si il est indiqué touché, vous venez de toucher un bâteau. \n 3. Si il est indiqué Plouf, vous venez de ne rien toucher. \n 4. Si il est indiqué Coulé, vous venez de couler un bâteau. \n\n Souhaitez vous jouer ? 1/0");
+        scanf("%d", &aideValue);
+
+        if(aideValue==1){
+            //mettre la fonction de jeu
+        }
+        if(aideValue==0){
+            system("cls");
+            system("exit");
+        }
+
     }
     if (menuValue == 3) {
         system("cls");
