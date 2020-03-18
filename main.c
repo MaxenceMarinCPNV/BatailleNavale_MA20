@@ -11,12 +11,11 @@
 #include <string.h>
 #include "shrek.c"
 #include "menuprinc.c"
+#include "quadrillage.c"
 
 
 
-void jeux(){
 
-}
 
 
 
@@ -63,7 +62,7 @@ do {
             Sleep(200);
         }
         system("cls");
-        jeux();
+        jeu();
 
 
         getchar();
