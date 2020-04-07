@@ -28,6 +28,8 @@ int main() {
 menuPrinc();
 
 do {
+
+    //affichage du menu principal
     system("cls");
     printf("\n\t\t\t  /\\/\\   ___ _ __  _   _   _ __  _ __(_)_ __   ___(_)_ __   __ _| |\n"
            "\t\t\t /    \\ / _ \\ '_ \\| | | | | '_ \\| '__| | '_ \\ / __| | '_ \\ / _` | |\n"
@@ -49,25 +51,27 @@ do {
         shrek();
 
     }
-
+//un faux timer
     if (menuValue == 1) {
         system("cls");
         printf("Vous accedez au menu de jeu..");
         int i = 0;
 
         puts("\nChargement des ressources en cours...\n");
-        system("explorer paypal.me/popbobsexdupe");
+        //petit lien, hésitez pas à donner
+        system("explorer https://www.paypal.me/popbobsexdupe");
         for (; i < 20; i++) {
             printf("#");
             Sleep(200);
         }
         system("cls");
-        jeu();
 
 
         getchar();
     }
     if (menuValue == 2) {
+
+        //menu d'aide
         system("cls");
         printf("           _     _       \n"
                "     /\\   (_)   | |      \n"

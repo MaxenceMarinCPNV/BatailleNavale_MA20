@@ -4,6 +4,7 @@
 #include <string.h>
 #
 
+//affichage du premier menu
 
 void menuPrinc(){
     printf("                    ____        _        _ _ _                               _      \n"

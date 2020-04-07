@@ -10,6 +10,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+//affichage du menu shrek + le screamer
 void shrek(){
     system("cls");
     system("color 25");
